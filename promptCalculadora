@@ -1,0 +1,27 @@
+const prompt = require("prompt-sync")({});
+let operacao
+let valor1
+let valor2
+
+valor1 = +prompt('Digite um número:')
+
+valor2 = +prompt('Digite mais um núemro:')
+
+operacao = prompt('Agora, digite uma operação:')
+
+
+function calculadora(valor1, valor2){
+    if ( operacao == '+') {
+        return valor1 + valor2
+    } else if ( operacao == '-') {
+        return valor1 - valor2
+    } else if ( operacao == '*') {
+        return valor1 * valor2
+    } else if ( operacao == '/') {
+        return valor1 / valor2
+    } else if (operacao == '%') {
+        return valor1 + valor2 / 100
+    }
+}
+
+console.log(calculadora(valor1,valor2))
