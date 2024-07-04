@@ -1,9 +1,6 @@
 let divisao = function(valor1, valor2){
-    operacao = valor1 / valor2
-
-    return operacao
+  
+    return valor1 / valor2
 }
 
-console.log(divisao(valor1,valor2))
-
-module.export = divisao
+module.exports = divisao
